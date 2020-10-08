@@ -16,10 +16,10 @@ app.get("/", function(req, res) {
 app.post("/", function(req, res){
 
   const query = req.body.cityName;
-  const apiKey = "519d08c4e60918faffaf67a1138a7bc6";
-  const unit = "metric";
-  const url = "https://api.openweathermap.org/data/2.5/weather?q=" + query + "&appid=" + apiKey + "&units=" + unit;
-  //const url = "https://api.openweathermap.org/data/2.5/weather?q=Australia&appid=519d08c4e60918faffaf67a1138a7bc6";
+  //const apiKey = "519d08c4e60918faffaf67a1138a7bc6";
+  //const unit = "metric";
+  //const url = "https://api.openweathermap.org/data/2.5/weather?q=" + query + "&appid=" + apiKey + "&units=" + unit;
+  const url = "https://api.openweathermap.org/data/2.5/weather?q=Australia&appid=519d08c4e60918faffaf67a1138a7bc6";
 
     //use a get request to get back a response
     https.get(url, function(response) {
